@@ -1,2 +1,51 @@
 # NovaBank
-My own online bank
+твій власний онлайн банк
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NovaBank — Твій банк. У твоєму світі.</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,sans-serif;background:#020816;color:#fff}
+header{position:sticky;top:0;z-index:5;background:rgba(2,8,22,.82);backdrop-filter:blur(12px);border-bottom:1px solid #17243a}
+nav{max-width:1150px;margin:auto;padding:18px 24px;display:flex;justify-content:space-between;align-items:center}.logo{font-size:25px;font-weight:800}.logo b{color:#16cfff}.logo i{font-style:normal;color:#7148ff}
+nav a{color:#dce7f7;text-decoration:none;margin-left:22px;font-size:14px}nav a:hover{color:#17d1ff}
+.hero{max-width:1150px;margin:auto;padding:95px 24px 80px;display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}
+.tag{color:#16d0ff;text-transform:uppercase;letter-spacing:2px;font-size:12px}h1{font-size:62px;line-height:1.03;margin:16px 0}.grad{background:linear-gradient(90deg,#fff,#10d5ff,#7546ff);-webkit-background-clip:text;color:transparent}
+p{color:#aebbd0;line-height:1.65;font-size:17px}.buttons{margin-top:28px}.btn{display:inline-block;padding:14px 20px;border-radius:12px;text-decoration:none;font-weight:bold;margin-right:10px}.primary{background:linear-gradient(90deg,#08cfff,#633cff);color:#fff}.ghost{border:1px solid #30415d;color:#e5edf9}
+.card{height:290px;border:1px solid #34445e;border-radius:25px;padding:30px;position:relative;overflow:hidden;background:linear-gradient(145deg,#09162a,#020713);box-shadow:0 30px 80px #0008}.card:after{content:"";position:absolute;right:-70px;bottom:-110px;width:300px;height:250px;transform:rotate(-20deg);background:linear-gradient(135deg,#00d6ff,#6d2fff);border-radius:45px}
+.cardname{font-size:25px;font-weight:bold}.chip{margin-top:55px;width:58px;height:42px;border-radius:8px;background:linear-gradient(135deg,#eee,#888)}.wave{position:absolute;right:25px;top:80px;font-size:31px}.card small{position:absolute;bottom:30px;font-size:18px;z-index:1}
+section{max-width:1150px;margin:auto;padding:75px 24px}.title{text-align:center;font-size:38px;margin-bottom:40px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.box{background:#071426;border:1px solid #20324d;border-radius:20px;padding:28px}.ico{font-size:31px;color:#18d0ff}.box h3{margin:14px 0 8px}.box p{font-size:15px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:25px}.panel{padding:32px;border:1px solid #20324d;border-radius:20px;background:#061123}.contact{text-align:center}
+footer{text-align:center;padding:35px;border-top:1px solid #142238;color:#718096;font-size:13px}
+@media(max-width:760px){nav div:last-child{display:none}.hero,.about{grid-template-columns:1fr}h1{font-size:44px}.grid{grid-template-columns:1fr}.hero{padding-top:60px}}
+</style>
+</head>
+<body>
+<header><nav><div class="logo">Nova<b>Bank</b><i>●</i></div><div><a href="#home">Головна</a><a href="#services">Послуги</a><a href="#about">Про банк</a><a href="#contact">Контакти</a></div></nav></header>
+
+<main>
+<section class="hero" id="home">
+<div><div class="tag">Цифровий банкінг нового покоління</div>
+<h1>Твій банк.<br><span class="grad">У твоєму світі.</span></h1>
+<p>NovaBank — навчальний проєкт сучасного цифрового банку. Зручні фінансові послуги, сучасна картка та просте керування коштами.</p>
+<div class="buttons"><a class="btn primary" href="#card">Замовити картку</a><a class="btn ghost" href="#services">Наші послуги</a></div></div>
+<div class="card" id="card"><div class="cardname">Nova<span class="grad">Bank</span></div><div class="wave">)))</div><div class="chip"></div><small>Більше, ніж банк.</small></div>
+</section>
+
+<section id="services"><h2 class="title">Наші послуги</h2><div class="grid">
+<div class="box"><div class="ico">◈</div><h3>Банківська картка</h3><p>Сучасна картка для покупок, платежів та щоденного використання.</p></div>
+<div class="box"><div class="ico">↗</div><h3>Перекази</h3><p>Швидкі та зручні перекази коштів між рахунками.</p></div>
+<div class="box"><div class="ico">⌁</div><h3>Онлайн-банкінг</h3><p>Керуйте фінансами онлайн у зручний для вас час.</p></div>
+</div></section>
+
+<section id="about"><h2 class="title">Про NovaBank</h2><div class="about">
+<div class="panel"><h3>Наша мета</h3><p>Створити простий і зрозумілий цифровий банк, який допомагає користувачам зручно керувати своїми фінансами.</p></div>
+<div class="panel"><h3>Наші переваги</h3><p>Сучасний дизайн, зручність, швидкість та доступність банківських послуг.</p></div>
+</div></section>
+
+<section id="contact"><div class="panel contact"><h2>Зв'яжіться з нами</h2><p>☎ 096-073-4332</p><p>🌐 www.novabank.ua</p><p>📍 Україна</p><p style="font-size:13px">Навчальний проєкт — сайт не є справжнім банківським сервісом.</p></div></section>
+</main>
+<footer>© 2026 NovaBank — навчальний проєкт</footer>
+</body></html>
